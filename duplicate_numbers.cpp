@@ -9,6 +9,7 @@ int main(){
         	for(j=i+1;j<=4;j++){
         		if(a[i]==a[j]){
             k++;
+	break;			
 		}
       }
   }
