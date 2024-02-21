@@ -19,9 +19,9 @@ int top= -1;
 	{
 	    if(x=='(')
 		 return 0;
-		if(x=='+'||x=='-')
+	    if(x=='+'||x=='-')
 		 return 1;
-		if(x=='*'||x=='/')
+	    if(x=='*'||x=='/')
 		return 2; 	
 	}  
 
@@ -41,9 +41,9 @@ int main()
 		  push(*e);
 		else if(*e==')')
 		{
-			while(priority(stack[top])>=priority(*e))
-			 printf("%c",pop());
-			push(*e); 
+		while(priority(stack[top])>=priority(*e))
+		 printf("%c",pop());
+		  push(*e); 
 			}    
 			e++;
 	}
